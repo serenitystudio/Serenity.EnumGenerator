@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>11</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        
+        <IsRoslynComponent>true</IsRoslynComponent>
+        <AnalyzerLanguage>cs</AnalyzerLanguage>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <IncludeSymbols>false</IncludeSymbols>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+        
+        <RootNamespace>Serenity.EnumGenerator</RootNamespace>
+        <PackageId>Serenity.EnumGenerator</PackageId>
+        <AssemblyName>Serenity.EnumGenerator</AssemblyName>
+        <Authors>Serenity Games</Authors>
+        <Description>A source generator for creating extension methods on enums using a [EnumExtensions] attribute</Description>
+        <Copyright>Copyright © Serenity Games</Copyright>
+        <PackageTags>enums attribute sourcegenerator generator generation codegen codegenerator codegeneration </PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.9.0" />
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+    
+    <PropertyGroup>
+        <DestinationRoot>$(MSBuildProjectDirectory)\..\Unity\Assets\Analyzers\Serenity.EnumGenerator</DestinationRoot>
+    </PropertyGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="$(Configuration) == 'Release'">
+        <Copy SourceFiles="$(TargetPath)" DestinationFiles="$(DestinationRoot)\$(TargetFileName)" SkipUnchangedFiles="true" />
+    </Target>
+</Project>
