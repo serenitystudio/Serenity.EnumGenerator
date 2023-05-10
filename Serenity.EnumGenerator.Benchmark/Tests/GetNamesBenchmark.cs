@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using BenchmarkDotNet.Attributes;
 
-namespace Serenity.EnumGenerator.Benchmark.Tes1ts;
+namespace Serenity.EnumGenerator.Benchmark.Tests;
 
 [Config(typeof(BenchmarkConfig))]
 public class GetNamesBenchmark
