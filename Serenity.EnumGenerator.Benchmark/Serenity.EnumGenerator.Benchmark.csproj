@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>11</LangVersion>
+        <TargetFramework>net7.0</TargetFramework>
+        <PackageId>Serenity.EnumGenerator.Benchmark</PackageId>
+        <Authors>Serenity Games</Authors>
+        <Description>A source generator for creating extension methods on enums using a [EnumExtensions] attribute</Description>
+        <Copyright>Copyright © Serenity Games</Copyright>
+        <PackageTags>enums attribute sourcegenerator generator generation codegen codegenerator codegeneration </PackageTags>
+        <Company>Serenity Games</Company>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BenchmarkDotNet" Version="0.13.5" />
+        <ProjectReference Include="..\Serenity.EnumGenerator\Serenity.EnumGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    </ItemGroup>
+
+</Project>
