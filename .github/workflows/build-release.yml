@@ -24,10 +24,10 @@ jobs:
       run: dotnet restore
       
     - name: Build (Release)
-      run: dotnet build "Serenity.EnumGenerator/Serenity.EnumGenerator.csproj" --configuration Release --no-restore -p:Version=${{ inputs.tag }}
+      run: dotnet build --configuration Release --no-restore -p:Version=${{ inputs.tag }}
       
     - name: Test
-      run: dotnet test "Serenity.EnumGenerator.Tests/Serenity.EnumGenerator.Tests.csproj" --configuration Release --no-build --verbosity normal
+      run: dotnet test --configuration Release --no-build --verbosity normal
       
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
