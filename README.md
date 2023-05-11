@@ -155,7 +155,7 @@ LaunchCount=1  WarmupCount=6
 ### Same system in Unity:
 ``` ini
 Unity: 2022.2.15f1
-com.unity.test-framework": 1.1.33
+com.unity.test-framework: 1.1.33
 com.unity.test-framework.performance: 3.0.0-pre.2
 Scripting Backend: Mono
 Api Compatibility Level: .Net Standard 2.1
