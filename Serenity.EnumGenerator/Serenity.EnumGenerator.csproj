@@ -16,10 +16,11 @@
         <RootNamespace>Serenity.EnumGenerator</RootNamespace>
         <PackageId>Serenity.EnumGenerator</PackageId>
         <AssemblyName>Serenity.EnumGenerator</AssemblyName>
-        <Authors>Serenity Games</Authors>
+        <Authors>Serenity Studios</Authors>
         <Description>A source generator for creating extension methods on enums using a [EnumExtensions] attribute</Description>
-        <Copyright>Copyright © Serenity Games</Copyright>
+        <Copyright>Copyright © Serenity Studios</Copyright>
         <PackageTags>enums attribute sourcegenerator generator generation codegen codegenerator codegeneration </PackageTags>
+        <Company>Serenity Studios</Company>
     </PropertyGroup>
 
     <ItemGroup>
