@@ -34,6 +34,7 @@ jobs:
       with:
         name: Serenity.EnumGenerator.dll
         path: ./Unity/Assets/Analyzers/Serenity.EnumGenerator/Serenity.EnumGenerator.dll
+        if-no-files-found: error
 
   create-release:
     needs: [build]
@@ -67,5 +68,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_name: Serenity.EnumGenerator.dll
-          asset_path: ./Unity/Assets/Analyzers/Serenity.EnumGenerator/Serenity.EnumGenerator.dll
+          asset_path: ./Serenity.EnumGenerator.dll/Serenity.EnumGenerator.dll
           asset_content_type: application/octet-stream
