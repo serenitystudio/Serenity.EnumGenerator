@@ -16,7 +16,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="BenchmarkDotNet" Version="0.13.5" />
+      <PackageReference Include="BenchmarkDotNet" Version="0.13.6" />
         <ProjectReference Include="..\Serenity.EnumGenerator\Serenity.EnumGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
     </ItemGroup>
 
