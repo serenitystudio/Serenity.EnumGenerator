@@ -21,6 +21,6 @@ internal class BenchmarkConfig : ManualConfig
     {
         AddDiagnoser(MemoryDiagnoser.Default);
         AddExporter(MarkdownExporter.GitHub);
-        AddJob(Job.ShortRun.WithIterationCount(32).WithWarmupCount(6).WithRuntime(CoreRuntime.Core70));
+        AddJob(Job.ShortRun.WithIterationCount(32).WithWarmupCount(6).WithRuntime(CoreRuntime.Latest));
     }
 }

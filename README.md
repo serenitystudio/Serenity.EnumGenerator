@@ -5,10 +5,10 @@
 
 A Unity compatible C# source generator to create an extension class for enums to use garbage and speed efficiently.
 
-There are several source generators for enums which use incremental source generator or not compatible Microsoft.CodeAnalysis.Analyzers, so I made another one for Unity.
+There are several source generators for enums which is not compatible Microsoft.CodeAnalysis.Analyzers, so I made another one for Unity.
 
 ## Installation
-Minimum supported Unity version is Unity `2021.2` because of `netstandard2.1` support of the project.
+Minimum supported Unity version is `2022.3.12f1` because of incremental source generator support of Unity. Use 1.x.x versions for older Unity versions.
 
 1. Download `Serenity.EnumGenerator.dll` file from [Release Page](https://github.com/serenitystudio/Serenity.EnumGenerator/releases)
 2. Move the dll file into the Assets folder, or any folder nested inside of the Assets folder, in your Unity project.
